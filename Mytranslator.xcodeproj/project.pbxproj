@@ -13,6 +13,7 @@
 		702732511E7CAD3500800DF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 702732501E7CAD3500800DF9 /* Assets.xcassets */; };
 		702732541E7CAD3500800DF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 702732521E7CAD3500800DF9 /* LaunchScreen.storyboard */; };
 		7027325F1E7CB59700800DF9 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7027325E1E7CB59700800DF9 /* CircleButton.swift */; };
+		702732621E7D0A2E00800DF9 /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 702732611E7D0A2E00800DF9 /* test.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		702732531E7CAD3500800DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		702732551E7CAD3500800DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7027325E1E7CB59700800DF9 /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		702732611E7D0A2E00800DF9 /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		702732481E7CAD3500800DF9 /* Mytranslator */ = {
 			isa = PBXGroup;
 			children = (
+				702732601E7D09D400800DF9 /* Resouses */,
 				7027325D1E7CB56300800DF9 /* Controller */,
 				7027325C1E7CB55B00800DF9 /* View */,
 				7027325B1E7CB54C00800DF9 /* Model */,
@@ -89,6 +92,14 @@
 			children = (
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		702732601E7D09D400800DF9 /* Resouses */ = {
+			isa = PBXGroup;
+			children = (
+				702732611E7D0A2E00800DF9 /* test.m4a */,
+			);
+			name = Resouses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				702732621E7D0A2E00800DF9 /* test.m4a in Resources */,
 				702732541E7CAD3500800DF9 /* LaunchScreen.storyboard in Resources */,
 				702732511E7CAD3500800DF9 /* Assets.xcassets in Resources */,
 				7027324F1E7CAD3500800DF9 /* Main.storyboard in Resources */,

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mytranslator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIb-43-K6I">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="My-translator" translatesAutoresizingMaskIntoConstraints="NO" id="26i-Oh-Dq2">
+                                        <rect key="frame" x="67" y="19" width="242" height="36"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="26i-Oh-Dq2" secondAttribute="bottom" id="I7b-TZ-bAb"/>
+                                    <constraint firstAttribute="height" constant="55" id="R8v-kQ-dDv"/>
+                                    <constraint firstItem="26i-Oh-Dq2" firstAttribute="top" secondItem="cIb-43-K6I" secondAttribute="top" constant="19" id="qT5-3M-xbZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="26i-Oh-Dq2" secondAttribute="trailing" constant="66" id="ucJ-D4-cvA"/>
+                                    <constraint firstItem="26i-Oh-Dq2" firstAttribute="leading" secondItem="cIb-43-K6I" secondAttribute="leading" constant="67" id="zQU-Gy-YWP"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKn-Ln-Qkc" customClass="CircleButton" customModule="Mytranslator" customModuleProvider="target">
+                                <rect key="frame" x="155" y="540" width="66" height="66"/>
+                                <color key="backgroundColor" red="1" green="0.13408801020408162" blue="0.086336096938775517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="FMo-S3-If5"/>
+                                    <constraint firstAttribute="width" constant="66" id="v7d-62-PEc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="33"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAY &amp; TRANSCRIBE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMm-Lx-N7Z">
+                                <rect key="frame" x="0.0" y="614" width="375" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="1dh-VI-38q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Tap the button to begin transcribe" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Mfb-wD-um9">
+                                <rect key="frame" x="20" y="75" width="335" height="445"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="tZ1-57-ldV">
+                                <rect key="frame" x="155.5" y="540.5" width="66" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="mpG-jU-PHy"/>
+                                    <constraint firstAttribute="width" constant="66" id="wo9-RN-5X0"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mfb-wD-um9" firstAttribute="top" secondItem="cIb-43-K6I" secondAttribute="bottom" constant="20" id="8Kc-8i-PnB"/>
+                            <constraint firstItem="cIb-43-K6I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CAl-M2-vqd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EMm-Lx-N7Z" secondAttribute="bottom" constant="8" id="Ec5-1p-U0V"/>
+                            <constraint firstItem="kKn-Ln-Qkc" firstAttribute="top" secondItem="Mfb-wD-um9" secondAttribute="bottom" constant="20" id="O6R-ko-ff2"/>
+                            <constraint firstItem="EMm-Lx-N7Z" firstAttribute="top" secondItem="kKn-Ln-Qkc" secondAttribute="bottom" constant="8" id="O9t-4m-eeH"/>
+                            <constraint firstAttribute="trailing" secondItem="cIb-43-K6I" secondAttribute="trailing" id="OfU-zF-8Nd"/>
+                            <constraint firstItem="kKn-Ln-Qkc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qin-hl-mk4"/>
+                            <constraint firstItem="tZ1-57-ldV" firstAttribute="centerY" secondItem="kKn-Ln-Qkc" secondAttribute="centerY" id="SBL-Fw-ymF"/>
+                            <constraint firstItem="cIb-43-K6I" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SVn-BF-G9g"/>
+                            <constraint firstItem="Mfb-wD-um9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Vva-4N-69o"/>
+                            <constraint firstItem="EMm-Lx-N7Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Z2M-AT-FGc"/>
+                            <constraint firstAttribute="trailing" secondItem="EMm-Lx-N7Z" secondAttribute="trailing" id="ZLR-hU-lJm"/>
+                            <constraint firstItem="tZ1-57-ldV" firstAttribute="centerX" secondItem="kKn-Ln-Qkc" secondAttribute="centerX" id="vvy-yy-iO5"/>
+                            <constraint firstAttribute="trailing" secondItem="Mfb-wD-um9" secondAttribute="trailing" constant="20" id="zc8-Ui-hIz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="spinner" destination="tZ1-57-ldV" id="WFF-WW-OFF"/>
+                        <outlet property="textfield" destination="Mfb-wD-um9" id="YgS-oX-olT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="My-translator" width="712" height="79"/>
+    </resources>
+</document>

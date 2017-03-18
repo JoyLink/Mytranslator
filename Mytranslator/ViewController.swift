@@ -13,11 +13,13 @@ import AVFoundation
 class ViewController: UIViewController, AVAudioPlayerDelegate{
 
     @IBOutlet weak var textfield: UITextView!
-    @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var microBtn: CircleButton!
     @IBOutlet weak var pressto: UILabel!
     @IBOutlet weak var mytranslator: UIImageView!
     @IBOutlet weak var topbar: UIView!
+    @IBOutlet weak var play: UIImageView!
+    
+    @IBOutlet weak var transilator: UIImageView!
     
     var audioPlay: AVAudioPlayer!
     
@@ -34,7 +36,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        spinner.isHidden = true
         
         switch SFSpeechRecognizer.authorizationStatus() {
         case .notDetermined:

@@ -69,13 +69,16 @@
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <activityIndicatorView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="tZ1-57-ldV">
-                                <rect key="frame" x="155.5" y="540.5" width="66" height="66"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="qMP-Wv-4If">
+                                <rect key="frame" x="155" y="540" width="66" height="66"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="mpG-jU-PHy"/>
-                                    <constraint firstAttribute="width" constant="66" id="wo9-RN-5X0"/>
+                                    <constraint firstAttribute="height" constant="66" id="guy-xZ-Dee"/>
+                                    <constraint firstAttribute="width" constant="66" id="nJk-PS-MaZ"/>
                                 </constraints>
-                            </activityIndicatorView>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -86,22 +89,23 @@
                             <constraint firstItem="EMm-Lx-N7Z" firstAttribute="top" secondItem="kKn-Ln-Qkc" secondAttribute="bottom" constant="8" id="O9t-4m-eeH"/>
                             <constraint firstAttribute="trailing" secondItem="cIb-43-K6I" secondAttribute="trailing" id="OfU-zF-8Nd"/>
                             <constraint firstItem="kKn-Ln-Qkc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qin-hl-mk4"/>
-                            <constraint firstItem="tZ1-57-ldV" firstAttribute="centerY" secondItem="kKn-Ln-Qkc" secondAttribute="centerY" id="SBL-Fw-ymF"/>
                             <constraint firstItem="cIb-43-K6I" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SVn-BF-G9g"/>
                             <constraint firstItem="Mfb-wD-um9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Vva-4N-69o"/>
                             <constraint firstItem="EMm-Lx-N7Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Z2M-AT-FGc"/>
                             <constraint firstAttribute="trailing" secondItem="EMm-Lx-N7Z" secondAttribute="trailing" id="ZLR-hU-lJm"/>
-                            <constraint firstItem="tZ1-57-ldV" firstAttribute="centerX" secondItem="kKn-Ln-Qkc" secondAttribute="centerX" id="vvy-yy-iO5"/>
+                            <constraint firstItem="EMm-Lx-N7Z" firstAttribute="top" secondItem="qMP-Wv-4If" secondAttribute="bottom" constant="8" id="pNh-hp-Si8"/>
+                            <constraint firstItem="qMP-Wv-4If" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rz2-v3-7be"/>
                             <constraint firstAttribute="trailing" secondItem="Mfb-wD-um9" secondAttribute="trailing" constant="20" id="zc8-Ui-hIz"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="microBtn" destination="kKn-Ln-Qkc" id="Hbg-mr-AHF"/>
-                        <outlet property="mytranslator" destination="26i-Oh-Dq2" id="TFZ-6m-m4J"/>
+                        <outlet property="mytranslator" destination="26i-Oh-Dq2" id="nqW-Qa-fHZ"/>
+                        <outlet property="play" destination="qMP-Wv-4If" id="ktI-eV-hpX"/>
                         <outlet property="pressto" destination="EMm-Lx-N7Z" id="1qn-l4-xQ2"/>
-                        <outlet property="spinner" destination="tZ1-57-ldV" id="WFF-WW-OFF"/>
                         <outlet property="textfield" destination="Mfb-wD-um9" id="YgS-oX-olT"/>
                         <outlet property="topbar" destination="cIb-43-K6I" id="DgX-fb-f6g"/>
+                        <outlet property="transilator" destination="26i-Oh-Dq2" id="bHg-Cb-8Yb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -111,5 +115,6 @@
     </scenes>
     <resources>
         <image name="My-translator" width="712" height="79"/>
+        <image name="play" width="229" height="220"/>
     </resources>
 </document>

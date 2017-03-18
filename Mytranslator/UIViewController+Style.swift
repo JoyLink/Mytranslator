@@ -22,27 +22,28 @@ extension ViewController {
     func setUI(status: SpeechStatus) {
         switch status {
         case .ready:
-            spinner.stopAnimating()
-            spinner.isHidden = true
+
             microBtn.backgroundColor = UIColor.gray
             pressto.text = "Tap to Translate"
             topbar.backgroundColor = UIColor.green
-            
+            play.image = UIImage(named: "play")
+            transilator.image = UIImage(named: "My-translator")
             
         case .recognizing:
-            spinner.startAnimating()
-            spinner.isHidden = false
+
             microBtn.backgroundColor = UIColor.red
             pressto.text = "Translating ..."
             topbar.backgroundColor = UIColor.red
-            
+            play.image = UIImage(named: "stop")
+            transilator.image = UIImage(named: "speaking")
             
         case .unavailable:
-            spinner.stopAnimating()
-            spinner.isHidden = true
+            
             microBtn.backgroundColor = UIColor.gray
             pressto.text = "Tap to Translate"
             topbar.backgroundColor = UIColor.green
+            play.image = UIImage(named: "play")
+            transilator.image = UIImage(named: "My-translator")
             
         }
     }

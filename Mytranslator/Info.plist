@@ -38,5 +38,7 @@
 	<string></string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>We need to analyze and transcribe your audio, we hope that&apos;s cool</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This will be the start point to allow get the translation service!</string>
 </dict>
 </plist>

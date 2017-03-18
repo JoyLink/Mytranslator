@@ -10,7 +10,7 @@ import UIKit
 import Speech
 import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVAudioPlayerDelegate{
 
     @IBOutlet weak var textfield: UITextView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
@@ -22,6 +22,13 @@ class ViewController: UIViewController {
         spinner.isHidden = true
        
     }
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        player.stop()
+        spinner.stopAnimating()
+        spinner.isHidden = true
+        
+    }
 
     func requestSpeechAuth() {
         SFSpeechRecognizer.requestAuthorization { authoStatus in
@@ -30,6 +37,7 @@ class ViewController: UIViewController {
                     do {
                         let sound = try AVAudioPlayer(contentsOf: path)
                         self.audioPlay = sound
+                        self.audioPlay.delegate = self
                         sound.play()
                     } catch {
                         print("Error")
@@ -42,7 +50,8 @@ class ViewController: UIViewController {
                         if let error = error {
                             print("There was a erro! \(error)")
                         } else {
-                            print(result?.bestTranscription.formattedString)
+                            self.textfield.text = result?.bestTranscription.formattedString
+                            
                         }
                     }
                 }
@@ -58,6 +67,8 @@ class ViewController: UIViewController {
         requestSpeechAuth()
         
     }
+    
+    
 
 }
 

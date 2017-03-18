@@ -15,6 +15,9 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
     @IBOutlet weak var textfield: UITextView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var microBtn: CircleButton!
+    @IBOutlet weak var pressto: UILabel!
+    @IBOutlet weak var mytranslator: UIImageView!
+    @IBOutlet weak var topbar: UIView!
     
     var audioPlay: AVAudioPlayer!
     
@@ -64,8 +67,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate{
         // Analyze the speech
         recognitionTask = speechRecognizer?.recognitionTask(with: request, resultHandler: { result, error in
             if let result = result {
-//                self.flightTextView.text = result.bestTranscription.formattedString
-//                self.searchFlight(number: result.bestTranscription.formattedString)
                 print(result.bestTranscription.formattedString)
                 self.textfield.text = result.bestTranscription.formattedString
             } else if let error = error {

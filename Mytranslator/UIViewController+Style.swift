@@ -24,12 +24,26 @@ extension ViewController {
         case .ready:
             spinner.stopAnimating()
             spinner.isHidden = true
+            microBtn.backgroundColor = UIColor.gray
+            pressto.text = "Tap to Translate"
+            topbar.backgroundColor = UIColor.green
+            
+            
         case .recognizing:
             spinner.startAnimating()
             spinner.isHidden = false
+            microBtn.backgroundColor = UIColor.red
+            pressto.text = "Translating ..."
+            topbar.backgroundColor = UIColor.red
+            
+            
         case .unavailable:
             spinner.stopAnimating()
             spinner.isHidden = true
+            microBtn.backgroundColor = UIColor.gray
+            pressto.text = "Tap to Translate"
+            topbar.backgroundColor = UIColor.green
+            
         }
     }
     

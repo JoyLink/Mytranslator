@@ -28,7 +28,7 @@
                                         <rect key="frame" x="67" y="19" width="242" height="36"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.1340880102" blue="0.086336096939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="26i-Oh-Dq2" secondAttribute="bottom" id="I7b-TZ-bAb"/>
                                     <constraint firstAttribute="height" constant="55" id="R8v-kQ-dDv"/>
@@ -39,7 +39,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKn-Ln-Qkc" customClass="CircleButton" customModule="Mytranslator" customModuleProvider="target">
                                 <rect key="frame" x="155" y="540" width="66" height="66"/>
-                                <color key="backgroundColor" red="1" green="0.13408801020408162" blue="0.086336096938775517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="FMo-S3-If5"/>
                                     <constraint firstAttribute="width" constant="66" id="v7d-62-PEc"/>
@@ -53,7 +53,7 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z1K-tk-wxv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAY &amp; TRANSCRIBE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMm-Lx-N7Z">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Translate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMm-Lx-N7Z">
                                 <rect key="frame" x="0.0" y="614" width="375" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="1dh-VI-38q"/>
@@ -97,8 +97,11 @@
                     </view>
                     <connections>
                         <outlet property="microBtn" destination="kKn-Ln-Qkc" id="Hbg-mr-AHF"/>
+                        <outlet property="mytranslator" destination="26i-Oh-Dq2" id="TFZ-6m-m4J"/>
+                        <outlet property="pressto" destination="EMm-Lx-N7Z" id="1qn-l4-xQ2"/>
                         <outlet property="spinner" destination="tZ1-57-ldV" id="WFF-WW-OFF"/>
                         <outlet property="textfield" destination="Mfb-wD-um9" id="YgS-oX-olT"/>
+                        <outlet property="topbar" destination="cIb-43-K6I" id="DgX-fb-f6g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
